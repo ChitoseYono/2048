@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+ <head>
+   <meta name="viewport"
+   content="
+   width = device-width,
+   height = device-height,
+   initial-scale = 1.0,
+   minimum-scale = 1.0,
+   maximum-scale = 1.0,
+   user-scalable = no"/>
+  <title>2048</title>
+
+  <link rel="stylesheet" type="text/css" href="2048.css"/>
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="support2048.js"></script>
+  <script type="text/javascript" src="anime2048.js"></script>
+  <script type="text/javascript" src="main2048.js"></script>
+
+ </head>
+
+ <body>
+  <header>
+        <h1>2048</h1>
+        <a href="javascript:newgame();" id="NewGameButton">New Game</a>
+        <p>Score:
+          <span id="score">0</span>
+        </p>
+  </header>
+
+  <div id="grid">
+    <div class="grid-cell" id="grid00"></div>
+    <div class="grid-cell" id="grid01"></div>
+    <div class="grid-cell" id="grid02"></div>
+    <div class="grid-cell" id="grid03"></div>
+
+    <div class="grid-cell" id="grid10"></div>
+    <div class="grid-cell" id="grid11"></div>
+    <div class="grid-cell" id="grid12"></div>
+    <div class="grid-cell" id="grid13"></div>
+
+    <div class="grid-cell" id="grid20"></div>
+    <div class="grid-cell" id="grid21"></div>
+    <div class="grid-cell" id="grid22"></div>
+    <div class="grid-cell" id="grid23"></div>
+
+    <div class="grid-cell" id="grid30"></div>
+    <div class="grid-cell" id="grid31"></div>
+    <div class="grid-cell" id="grid32"></div>
+    <div class="grid-cell" id="grid33"></div>
+  </div>
+  
+ </body>
+</html>
