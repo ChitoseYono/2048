@@ -46,8 +46,15 @@ function getNumberBgColor(number) {
     case 2048:
       return "#09c";
       break;
+    case 4096:
+      return "#a6c";
+      break;
+    case 8192:
+      return "#93c";
+      break;
     default:
       return "black";
+      break;
   }
 }
 
