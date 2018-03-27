@@ -128,27 +128,27 @@ $(document).keydown(function(event) {
   switch (event.keyCode) {
     case 37: //left
       if (moveLeft()) {
-        setTimeout("generateOneNum()", 150);
-        setTimeout("isgameover()", 200);
+        setTimeout("generateOneNum()", 210);
+        setTimeout("isgameover()", 300);
       }
       break;
     case 38: //up
       if (moveUp()) {
-        setTimeout("generateOneNum()", 150);
-        setTimeout("isgameover()", 200);
+        setTimeout("generateOneNum()", 210);
+        setTimeout("isgameover()", 300);
       }
       break;
       s;
     case 39: //right
       if (moveRight()) {
-        setTimeout("generateOneNum()", 150);
-        setTimeout("isgameover()", 200);
+        setTimeout("generateOneNum()", 210);
+        setTimeout("isgameover()", 300);
       }
       break;
     case 40: //down
       if (moveDown()) {
-        setTimeout("generateOneNum()", 150);
-        setTimeout("isgameover()", 200);
+        setTimeout("generateOneNum()", 210);
+        setTimeout("isgameover()", 300);
       }
       break;
     default:
@@ -184,28 +184,28 @@ document.addEventListener('touchend',function(event){
       if(deltax>0){
           //Right
           if (moveRight()) {
-            setTimeout("generateOneNum()", 150);
-            setTimeout("isgameover()", 200);
+            setTimeout("generateOneNum()", 210);
+            setTimeout("isgameover()", 300);
           }
       }else{
           //Left
           if (moveLeft()) {
-            setTimeout("generateOneNum()", 150);
-            setTimeout("isgameover()", 200);
+            setTimeout("generateOneNum()", 210);
+            setTimeout("isgameover()", 300);
           }
       }
   }else{
     if(deltay>0){
           //Down
           if (moveDown()) {
-            setTimeout("generateOneNum()", 150);
-            setTimeout("isgameover()", 200);
+            setTimeout("generateOneNum()", 210);
+            setTimeout("isgameover()", 300);
           }
     }else{
           //Up
           if (moveUp()) {
-            setTimeout("generateOneNum()", 150);
-            setTimeout("isgameover()", 200);
+            setTimeout("generateOneNum()", 210);
+            setTimeout("isgameover()", 300);
           }
     }
   }
@@ -251,7 +251,7 @@ function moveLeft() {
       }
     }
 
-  setTimeout("updateBoard()", 50);
+  setTimeout("updateBoard()", 200);
   return true;
 }
 
@@ -284,7 +284,7 @@ function moveRight() {
       }
     }
 
-  setTimeout("updateBoard()", 50);
+  setTimeout("updateBoard()", 200);
   return true;
 }
 
@@ -317,7 +317,7 @@ function moveUp() {
       }
     }
 
-  setTimeout("updateBoard()", 50);
+  setTimeout("updateBoard()", 200);
   return true;
 }
 
@@ -350,6 +350,6 @@ function moveDown() {
       }
     }
 
-  setTimeout("updateBoard()", 50);
+  setTimeout("updateBoard()", 200);
   return true;
 }
