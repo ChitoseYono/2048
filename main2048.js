@@ -123,7 +123,8 @@ function generateOneNum() {
 
 //用于监听键盘
 $(document).keydown(function(event) {
-  event.preventDefault();                   //取消了原来键盘的效果
+  //取消了原来键盘的效果
+  event.preventDefault();
   switch (event.keyCode) {
     case 37: //left
       if (moveLeft()) {
@@ -165,7 +166,7 @@ document.addEventListener('touchstart',function(event){
 //取消原来效果
 document.addEventListener('touchmove',function(event){
   event.preventDefault();
-})
+},{ passive: false })
 
 document.addEventListener('touchend',function(event){
   endx=event.changedTouches[0].pageX;
