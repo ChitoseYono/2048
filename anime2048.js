@@ -23,7 +23,7 @@ function showMoveAnime(fromX, fromY ,toX ,toY){
         height:cellSideLength,
         top: getPosTop(toX, toY),
         left: getPosLeft(toX, toY),
-    },100);
+    },200);
     
 }
 
